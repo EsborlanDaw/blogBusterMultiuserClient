@@ -15,6 +15,11 @@ import { PaginationUnroutedComponent } from './component/shared/pagination-unrou
 import { PaginationService } from './service/pagination.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PostService } from './service/Post.service';
+import { UserPlistAdminComponent } from './component/user/UserPlistAdmin/UserPlistAdmin.component';
+import { UserViewAdminComponent } from './component/user/UserViewAdmin/UserViewAdmin.component';
+import { UserRemoveAdminComponent } from './component/user/UserRemoveAdmin/UserRemoveAdmin.component';
+import { UserEditAdminComponent } from './component/user/UserEditAdmin/UserEditAdmin.component';
+import { UserNewAdminComponent } from './component/user/UserNewAdmin/UserNewAdmin.component';
 
 
 
@@ -26,7 +31,12 @@ import { PostService } from './service/Post.service';
     PostPlistAdminComponent,
     SearchUnroutedComponent,
     DropdownRegisterPageComponent,
-    PaginationUnroutedComponent
+    PaginationUnroutedComponent,
+    UserPlistAdminComponent,
+    UserViewAdminComponent,
+    UserRemoveAdminComponent,
+    UserEditAdminComponent,
+    UserNewAdminComponent
   ],
   imports: [
     BrowserModule,

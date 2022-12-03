@@ -1,3 +1,4 @@
+import { FormControl } from "@angular/forms";
 
 
 
@@ -16,6 +17,9 @@ export interface Sort {
     unsorted: boolean;
 }
 
+export interface IEntity {
+    id: number;
+}
 
 export interface IPage<T> {
     content: T[];
@@ -38,7 +42,26 @@ export interface IUser {
     lastname: string;
     email: string;
     username: string;
-    posts: number;
+    post: IPost;
+}
+
+export interface IUser2Form {
+    id:          FormControl<number>;
+    name:        FormControl<string>;
+    surname:     FormControl<string>;
+    lastname:    FormControl<string>;
+    email:       FormControl<string>;
+    username:    FormControl<string>;
+    post:        FormControl<IEntity>;
+}
+export interface IUser2Send {
+    id: number;
+    name: string;
+    surname: string;
+    lastname: string;
+    email: string;
+    username: string;
+    post: IEntity;
 }
 
 export interface IPost {
