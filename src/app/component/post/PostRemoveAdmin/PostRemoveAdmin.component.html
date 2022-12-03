@@ -1,36 +1,41 @@
 <div class="container mt-5">
   <div class="row">
       <div class="col">
-          <h1 class="text-center mb-5">Elimna user</h1>
+          <h1 class="text-center mb-5">Borrar Post</h1>
           <table class="table table-bordered table-striped">
               <tbody>
                   <tr>
                       <th>Id</th>
-                      <td>{{oUser.id}}</td>
+                      <td>{{oPost.id}}</td>
                   </tr>
                   <tr>
-                      <td>Name</td>
-                      <td>{{oUser.name}}</td>
+                      <td>Title</td>
+                      <td>{{oPost.title}}</td>
                   </tr>
                   <tr>
-                      <td>Surname</td>
-                      <td>{{oUser.surname}}</td>
+                      <td>Body</td>
+                      <td>{{oPost.body}}</td>
                   </tr>
                   <tr>
-                      <td>Lastname</td>
-                      <td>{{oUser.lastname}}</td>
+                      <td>Labels</td>
+                      <td>{{oPost.labels}}</td>
                   </tr>
                   <tr>
-                      <td>Email</td>
-                      <td>{{oUser.email}}</td>
+                      <td>Visible</td>
+                      <td>{{oPost.visible}}</td>
                   </tr>
                   <tr>
-                      <td>Username</td>
-                      <td>{{oUser.username}}</td>
+                      <td>Datetime</td>
+                      <td>{{oPost.datetime}}</td>
                   </tr>
+                  <tr>
+                    <td>User</td>
+                    <td>{{oPost.user.id}}</td>
+                </tr>
               </tbody>
           </table>
       </div>
+
   </div>
 </div>
 

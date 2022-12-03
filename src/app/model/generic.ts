@@ -3,17 +3,17 @@ import { FormControl } from "@angular/forms";
 
 
 export interface Pageable {
-    sort:       Sort;
-    offset:     number;
+    sort: Sort;
+    offset: number;
     pageNumber: number;
-    pageSize:   number;
-    paged:      boolean;
-    unpaged:    boolean;
+    pageSize: number;
+    paged: boolean;
+    unpaged: boolean;
 }
 
 export interface Sort {
-    empty:    boolean;
-    sorted:   boolean;
+    empty: boolean;
+    sorted: boolean;
     unsorted: boolean;
 }
 
@@ -46,13 +46,13 @@ export interface IUser {
 }
 
 export interface IUser2Form {
-    id:          FormControl<number>;
-    name:        FormControl<string>;
-    surname:     FormControl<string>;
-    lastname:    FormControl<string>;
-    email:       FormControl<string>;
-    username:    FormControl<string>;
-    post:        FormControl<IEntity>;
+    id:         FormControl<number>;
+    name:       FormControl<string>;
+    surname:    FormControl<string>;
+    lastname:   FormControl<string>;
+    email:      FormControl<string>;
+    username:   FormControl<string>;
+    post:       FormControl<IEntity>;
 }
 export interface IUser2Send {
     id: number;
@@ -72,4 +72,23 @@ export interface IPost {
     visible: boolean;
     datetime: string;
     user: IUser;
+}
+
+export interface IPost2Form {
+    id:         FormControl<number>;
+    title:      FormControl<string>;
+    body:       FormControl<string>;
+    labels:     FormControl<string>;
+    visible:    FormControl<boolean>;
+    datetime:   FormControl<string>;
+    user:       FormControl<IEntity>;
+}
+export interface IPost2Send {
+    id: number;
+    title: string;
+    body: string;
+    labels: string;
+    visible: boolean;
+    datetime: string;
+    user: IEntity;
 }

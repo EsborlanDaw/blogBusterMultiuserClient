@@ -20,6 +20,9 @@ import { UserViewAdminComponent } from './component/user/UserViewAdmin/UserViewA
 import { UserRemoveAdminComponent } from './component/user/UserRemoveAdmin/UserRemoveAdmin.component';
 import { UserEditAdminComponent } from './component/user/UserEditAdmin/UserEditAdmin.component';
 import { UserNewAdminComponent } from './component/user/UserNewAdmin/UserNewAdmin.component';
+import { PostViewAdminComponent } from './component/post/PostViewAdmin/PostViewAdmin.component';
+import { PostRemoveAdminComponent } from './component/post/PostRemoveAdmin/PostRemoveAdmin.component';
+import { PostNewAdminComponent } from './component/post/PostNewAdmin/PostNewAdmin.component';
 
 
 
@@ -36,7 +39,10 @@ import { UserNewAdminComponent } from './component/user/UserNewAdmin/UserNewAdmi
     UserViewAdminComponent,
     UserRemoveAdminComponent,
     UserEditAdminComponent,
-    UserNewAdminComponent
+    UserNewAdminComponent,
+    PostViewAdminComponent,
+    PostRemoveAdminComponent,
+    PostNewAdminComponent
   ],
   imports: [
     BrowserModule,
